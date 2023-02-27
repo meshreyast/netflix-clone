@@ -4,8 +4,8 @@ import { UserAuth } from '../../context/AuthContext'
 
 const Login = () => {
 
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const { user, logIn } = UserAuth();
     const [error, setError] = useState('');
     const navigate = useNavigate();
